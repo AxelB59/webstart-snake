@@ -7,6 +7,6 @@ recréer le jeu snake à l'aide des langages php et JavaScript
 
 - le but étant de manger des petites boules qui apparaîtront aléatoirement et qui feront grandir le serpent
 
-- si le serpent se cogne sur les bord du carré ou s'il se mord la queue : c'est perdu
+- si le serpent se cogne sur les bord de la surface du jeu ou s'il se mord la queue : c'est perdu
 
 - système de point en fonction des boules mangés
