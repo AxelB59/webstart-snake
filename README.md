@@ -1,6 +1,6 @@
 # webstart-snake
 
-recréer le jeu snake à l'aide des langages php et JavaScript
+recréer le jeu snake à l'aide du langage python
 
 
 - un serpent dans un espace carré qui se déplace tout seul et que l'on dirige avec les fléches haut/bas/gauche/droite
