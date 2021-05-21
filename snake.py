@@ -38,6 +38,8 @@ def move():
    
     if flag != 0:
         fen.after(60, move)
+
+    eat()
  
 def newGame():
     global pX,pY
@@ -62,19 +64,16 @@ def down(event):
     global direction
     direction = 'bas'
    
-def test():
+def eat():
     global pomme
     global x,y,pX,pY
     global Serpent
     if Serpent[1][0]>pX-7 and  Serpent[1][0]<pX+7:        
         if Serpent[1][1]>pY-7 and Serpent[1][1]<pY+7:
-            #On remet une pomme au hasard
             pX = randrange(5, 495)
             pY = randrange(5, 495)
-            can.coords(pomme,pX, pY, pX+5, pY+5)
-            #On ajoute un nouveau point au serpent
+            can.coords('pomme',pX, pY, pX+5, pY+5)
             Serpent.append([0,0])
-            #print(Serpent)
        
 x = 245
 y = 24        
