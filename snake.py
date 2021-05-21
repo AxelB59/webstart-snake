@@ -39,6 +39,7 @@ def move():
     if flag != 0:
         fen.after(60, move)
 
+    collision()
     eat()
  
 def newGame():
@@ -63,6 +64,16 @@ def up(event):
 def down(event):
     global direction
     direction = 'bas'
+
+def collision():
+    if Serpent[0][0] + 10 == 500:
+        can.delete("all")
+    if Serpent[0][0] <= 0 : 
+        can.delete("all")
+    if Serpent[0][0] <= 0 :
+        can.delete("all")
+    if Serpent[0][0] == 500 :
+        can.delete("all")
    
 def eat():
     global pomme
